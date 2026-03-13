@@ -36,7 +36,7 @@ export default function Navbar() {
             href="#home"
             className="flex items-center gap-3 group"
           >
-            <img src={logo} alt="BK Logo" className="h-20 w-auto transition-transform duration-300 group-hover:scale-105" />
+            <img src={logo} alt="BK Logo" className="h-20 w-auto transition-transform duration-300 group-hover:scale-105 dark:invert-0 invert" />
             <span className="text-2xl font-black tracking-tighter gradient-text">
             </span>
           </a>
