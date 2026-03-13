@@ -27,7 +27,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
           {/* Info Side with Logos */}
           <div className="reveal">
-            <h3 className="text-3xl font-black text-white mb-8 tracking-tight">Let's build something scalable.</h3>
+            <h3 className="text-3xl font-black mb-8 tracking-tight">Let's build something scalable.</h3>
             
             <div className="space-y-10">
               {/* Email */}
@@ -39,7 +39,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className="text-xs font-mono text-accent-cyan uppercase tracking-widest block mb-1 font-bold">Email</span>
-                  <a href="mailto:bhukyakishore3921@gmail.com" className="text-xl font-bold text-white hover:text-accent-cyan transition-colors">bhukyakishore3921@gmail.com</a>
+                  <a href="mailto:bhukyakishore3921@gmail.com" className="text-xl font-bold hover:text-accent-cyan transition-colors">bhukyakishore3921@gmail.com</a>
                 </div>
               </div>
 
@@ -52,8 +52,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <span className="text-xs font-mono text-accent-purple uppercase tracking-widest block mb-1 font-bold">GitHub</span>
-                    <span className="font-bold text-white group-hover:text-accent-purple transition-all">@BhukyaKishore</span>
+                    <span className="text-xs font-mono text-accent-cyan uppercase tracking-widest block mb-1 font-bold">GitHub</span>
+                    <span className="font-bold group-hover:text-accent-cyan transition-all">@BhukyaKishore</span>
                   </div>
                 </a>
 
@@ -65,7 +65,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="text-xs font-mono text-accent-blue uppercase tracking-widest block mb-1 font-bold">LinkedIn</span>
-                    <span className="font-bold text-white group-hover:text-accent-blue transition-all">/kishore-bhukya</span>
+                    <span className="font-bold group-hover:text-accent-blue transition-all">/kishore-bhukya</span>
                   </div>
                 </a>
               </div>
@@ -93,7 +93,7 @@ export default function Contact() {
                     name="name"
                     type="text" 
                     placeholder="E.g. John Doe" 
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white outline-none focus:border-accent-cyan transition-all text-lg font-medium" 
+                    className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-accent-cyan transition-all text-lg font-medium" 
                   />
                 </div>
                 <div>
@@ -103,7 +103,7 @@ export default function Contact() {
                     name="email"
                     type="email" 
                     placeholder="E.g. john@example.com" 
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white outline-none focus:border-accent-cyan transition-all text-lg font-medium" 
+                    className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-2xl px-6 py-4 outline-none focus:border-accent-cyan transition-all text-lg font-medium" 
                   />
                 </div>
                 <div>

@@ -37,7 +37,7 @@ export default function Hero() {
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight mb-4 animate-slide-up">
           <span className="gradient-text">Kishore</span>{' '}
-          <span className="text-white">Bhukya</span>
+          <span className="dark:text-white">Bhukya</span>
         </h1>
 
         <div className="h-10 md:h-12 flex items-center justify-center mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
@@ -47,9 +47,9 @@ export default function Hero() {
           <span className="typewriter-cursor" />
         </div>
 
-        <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          Building <span className="text-white font-bold tracking-tight">scalable data pipelines</span> &{' '}
-          <span className="text-white font-bold tracking-tight">agentic AI systems</span> with absolute efficiency.
+        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          Building <span className="text-dark-900 dark:text-white font-bold tracking-tight">scalable data pipelines</span> &{' '}
+          <span className="text-dark-900 dark:text-white font-bold tracking-tight">agentic AI systems</span> with absolute efficiency.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.7s' }}>

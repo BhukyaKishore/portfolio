@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-dark-900/80 backdrop-blur-xl border-b border-white/5 shadow-lg'
+          ? 'bg-white/80 dark:bg-dark-900/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 shadow-lg'
           : 'bg-transparent'
       } ${scrolled ? 'h-20' : 'h-24'}`}
     >
@@ -48,7 +48,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-semibold text-gray-400 hover:text-accent-cyan transition-all duration-300 relative group"
+                  className="text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-accent-cyan transition-all duration-300 relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-cyan transition-all duration-300 group-hover:w-full" />
@@ -56,12 +56,12 @@ export default function Navbar() {
               ))}
             </div>
 
-            <div className="flex items-center gap-4 pl-8 border-l border-white/10 ml-4">
+            <div className="flex items-center gap-4 pl-8 border-l border-black/10 dark:border-white/10 ml-4">
               <a
                 href="https://github.com/BhukyaKishore"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
+                className="text-gray-600 dark:text-gray-400 hover:text-accent-cyan dark:hover:text-white transition-colors duration-300"
                 aria-label="GitHub"
               >
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ export default function Navbar() {
               
               <button
                 onClick={toggleTheme}
-                className="p-2.5 rounded-2xl bg-white/5 border border-white/10 hover:border-accent-cyan/50 transition-all duration-300"
+                className="p-2.5 rounded-2xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 hover:border-accent-cyan/50 transition-all duration-300"
               >
                 {theme === 'dark' ? '☀️' : '🌙'}
               </button>
@@ -102,9 +102,9 @@ export default function Navbar() {
               className="flex flex-col gap-1.5 p-2"
               aria-label="Toggle menu"
             >
-              <span className={`block w-6 h-0.5 bg-gray-300 transition-all ${mobileOpen ? 'rotate-45 translate-y-2' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-gray-300 transition-all ${mobileOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-gray-300 transition-all ${mobileOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all ${mobileOpen ? 'rotate-45 translate-y-2' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all ${mobileOpen ? 'opacity-0' : ''}`} />
+              <span className={`block w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-all ${mobileOpen ? '-rotate-45 -translate-y-2' : ''}`} />
             </button>
           </div>
         </div>
@@ -112,20 +112,20 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       <div className={`lg:hidden absolute top-full left-0 right-0 transition-all duration-500 overflow-hidden ${mobileOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
-        <div className="bg-dark-900/95 backdrop-blur-3xl border-t border-white/10 px-6 py-8 space-y-4">
+        <div className="bg-white/95 dark:bg-dark-900/95 backdrop-blur-3xl border-t border-black/10 dark:border-white/10 px-6 py-8 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="block py-4 px-6 text-lg font-bold text-gray-400 hover:text-accent-cyan hover:bg-white/5 rounded-xl transition-all duration-300"
+              className="block py-4 px-6 text-lg font-bold text-gray-600 dark:text-gray-400 hover:text-accent-cyan hover:bg-black/5 dark:hover:bg-white/5 rounded-xl transition-all duration-300"
             >
               {link.label}
             </a>
           ))}
-          <div className="flex gap-6 px-6 pt-4 border-t border-white/10">
-            <a href="https://github.com/BhukyaKishore" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">GitHub</a>
-            <a href="https://www.linkedin.com/in/kishore-bhukya/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent-cyan">LinkedIn</a>
+          <div className="flex gap-6 px-6 pt-4 border-t border-black/10 dark:border-white/10">
+            <a href="https://github.com/BhukyaKishore" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-accent-cyan dark:hover:text-white">GitHub</a>
+            <a href="https://www.linkedin.com/in/kishore-bhukya/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-accent-cyan">LinkedIn</a>
           </div>
         </div>
       </div>

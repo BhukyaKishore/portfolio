@@ -85,10 +85,10 @@ const AnimatedBackground = () => {
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Reverting to Cyan and Purple ribbons
-            const ribbonAlpha = theme === 'dark' ? '0.3' : '0.6';
+            const ribbonAlpha = theme === 'dark' ? '0.2' : '0.1';
             drawRibbon(0.5, 'rgba(255,255,255,0)', `rgba(0, 212, 255, ${ribbonAlpha})`, 0, 70, 1.4, 0.02);
 
-            const intenseAlpha = theme === 'dark' ? '0.4' : '0.7';
+            const intenseAlpha = theme === 'dark' ? '0.25' : '0.15';
             drawRibbon(0.52, 'rgba(255,255,255,0)', `rgba(124, 58, 237, ${intenseAlpha})`, Math.PI / 6, 80, 1.8, 0.02);
 
             const frontStart = theme === 'dark' ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.9)';

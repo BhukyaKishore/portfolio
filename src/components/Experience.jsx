@@ -85,7 +85,7 @@ export default function Experience() {
                 style={{ transitionDelay: `${idx * 200}ms` }}
               >
                 {/* Timeline Dot */}
-                <div className={`absolute left-4 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-2xl bg-dark-950 border border-white/10 z-20 flex items-center justify-center text-${item.color} shadow-[0_0_20px_rgba(0,0,0,0.8)] hidden md:flex hover:scale-110 transition-transform duration-300`}>
+                <div className={`absolute left-4 md:left-1/2 -translate-x-1/2 w-10 h-10 rounded-2xl bg-white dark:bg-dark-950 border border-black/10 dark:border-white/10 z-20 flex items-center justify-center text-${item.color} shadow-xl dark:shadow-[0_0_20px_rgba(0,0,0,0.8)] hidden md:flex hover:scale-110 transition-transform duration-300`}>
                   <div className={`absolute inset-0 rounded-2xl bg-${item.color}/10 blur-sm`} />
                   {item.icon}
                 </div>
@@ -101,15 +101,15 @@ export default function Experience() {
                       {item.period}
                     </span>
                     
-                    <h3 className="text-2xl font-black text-white mb-1 tracking-tight">{item.title}</h3>
-                    <p className="text-gray-400 font-bold mb-6 text-sm flex items-center gap-2">
+                    <h3 className="text-2xl font-black mb-1 tracking-tight dark:text-white">{item.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 font-bold mb-6 text-sm flex items-center gap-2">
                        <span className={`w-1 h-1 rounded-full bg-${item.color}`} />
                        {item.subtitle}
                     </p>
 
                     <ul className="space-y-4">
                       {item.description.map((bullet, i) => (
-                        <li key={i} className="text-sm text-gray-500 flex gap-4 leading-relaxed font-medium">
+                        <li key={i} className="text-sm text-gray-600 dark:text-gray-500 flex gap-4 leading-relaxed font-medium">
                           <span className={`text-${item.color} font-black mt-1 text-xs shrink-0 select-none`}>0{i+1} —</span>
                           {bullet}
                         </li>

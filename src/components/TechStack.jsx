@@ -72,14 +72,14 @@ export default function TechStack() {
                 <div className={`p-4 rounded-2xl bg-${cat.color}/10 text-${cat.color} group-hover:scale-110 transition-transform duration-500`}>
                   {cat.icon}
                 </div>
-                <h3 className={`text-xl font-bold text-white tracking-tight`}>{cat.title}</h3>
+                <h3 className={`text-xl font-bold tracking-tight dark:text-white`}>{cat.title}</h3>
               </div>
 
               <div className="flex flex-wrap gap-3">
                 {cat.items.map((item) => (
                   <span 
                     key={item} 
-                    className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-gray-300 text-sm font-medium hover:bg-white/10 hover:text-white transition-all cursor-default"
+                    className="px-4 py-2 rounded-xl bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 text-gray-600 dark:text-gray-300 text-sm font-medium hover:bg-black/10 dark:hover:bg-white/10 hover:text-dark-900 dark:hover:text-white transition-all cursor-default"
                   >
                     {item}
                   </span>

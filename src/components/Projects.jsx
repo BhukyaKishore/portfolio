@@ -87,8 +87,8 @@ export default function Projects() {
               <div className="w-12 h-12 rounded-2xl bg-accent-cyan/10 flex items-center justify-center text-accent-cyan mb-6 group-hover:scale-110 transition-transform">
                 {project.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 leading-tight">{project.title}</h3>
-              <p className="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">{project.description}</p>
+              <h3 className="text-xl font-bold dark:text-white mb-4 leading-tight">{project.title}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 leading-relaxed flex-grow">{project.description}</p>
               
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags.map((tag) => (
@@ -100,7 +100,7 @@ export default function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-accent-cyan transition-all"
+                className="inline-flex items-center gap-2 text-sm font-bold text-gray-600 dark:text-gray-400 hover:text-accent-cyan transition-all"
               >
                 View Repository
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
