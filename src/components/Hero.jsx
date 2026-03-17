@@ -60,7 +60,8 @@ export default function Hero() {
             Get In Touch
           </a>
           <a
-            href="/Kishore_Resume.pdf"
+            href="./Kishore_Resume.pdf"
+            download="Kishore_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
